@@ -27,9 +27,17 @@ console.log("-----------------");
 
 function clearInchtoFeet(inch) {
     const feetfraction = inch / 12;
-    const feetNumber = parseInt(feetfraction);
-    const inchNumber = inch % 12;
+    const feetNumber = parseInt(feetfraction); //for [5.83 to = 5]
+    const inchNumber = inch % 12; //for [vagsas bar korar neom.exm: 70%12=10]
     const result = feetNumber + " feet " + inchNumber + " inch";
     return result;
 }
 console.log(clearInchtoFeet(70));
+console.log("-----------------");
+
+function mileToKm(mile) {
+    const result = mile * 1.60934;
+    return result;
+}
+const kilometar = mileToKm(13);
+console.log(kilometar, "km");
