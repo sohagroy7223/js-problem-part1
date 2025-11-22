@@ -31,14 +31,6 @@ const mistyKhor = [
 ];
 // console.log(noDuplicate1(mistyKhor));
 
-// function teaKhor(array) {
-//     for (a = 0; a < array.length; a++) {
-//         console.log(a);
-//     }
-// }
-// const manus = ["elon", "bil", "sumon", "sagor", "elon", "bil"];
-// console.log(teaKhor(manus));
-
 function noDuplicate(array) {
     const unique = [];
     for (let i = 0; i < array.length; i++) {
@@ -51,4 +43,19 @@ function noDuplicate(array) {
 
 const manus = ["elon", "bil", "sumon", "sagor", "elon", "bil"];
 
-console.log(noDuplicate(manus));
+// console.log(noDuplicate(manus));
+
+function teaKhor(array) {
+    let a = 0;
+    const news = [];
+    while (a < array.length - 1) {
+        a++;
+        if (news.includes(array[a]) === false);
+        news.push(array[a]);
+    }
+    return news;
+}
+
+const manush = ["elon", "bil", "sumon", "sagor", "elon", "bil"];
+const result = teaKhor(manus);
+console.log(result);
