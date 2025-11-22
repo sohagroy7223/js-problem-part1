@@ -1,0 +1,12 @@
+console.log(Math.max(12, 23, 45, 23, 667, 34, 56, 4, 67, 3));
+const min = Math.min(12, 34, 567, 7889, 45, 34, 23, 45, 5, -99);
+console.log(min);
+console.log(Math.PI);
+console.log(Math.round(23.51));
+console.log(Math.floor(3.99));
+console.log(Math.ceil(23.56));
+console.log(Math.abs(3 - 5));
+console.log(Math.random() * 6);
+console.log(Math.fround(500.19));
+const rand = Math.round(Math.random() * 10);
+console.log(rand);
