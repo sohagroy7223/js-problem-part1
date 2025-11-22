@@ -48,10 +48,11 @@ const manus = ["elon", "bil", "sumon", "sagor", "elon", "bil"];
 function teaKhor(array) {
     let a = 0;
     const news = [];
-    while (a < array.length - 1) {
+    while (a < array.length) {
+        if (news.includes(array[a]) === false) {
+            news.push(array[a]);
+        }
         a++;
-        if (news.includes(array[a]) === false);
-        news.push(array[a]);
     }
     return news;
 }
